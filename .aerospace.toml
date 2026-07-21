@@ -74,6 +74,10 @@ alt-shift-d = ['move-node-to-workspace next', 'workspace next']
 alt-shift-s = ['move-node-to-monitor prev', 'focus-monitor prev']
 alt-shift-g = ['move-node-to-monitor next', 'focus-monitor next']
 
+# Scratchpad
+cmd-alt-s = 'move-node-to-workspace S'
+alt-s     = 'workspace S'
+
 # App launchers
 cmd-enter       = 'exec-and-forget open -n /Applications/Ghostty.app'
 shift-cmd-enter = 'exec-and-forget open -n /Applications/Zen.app --args --blank-window'
@@ -82,5 +86,4 @@ shift-cmd-d     = 'exec-and-forget open -n /Applications/Vesktop.app'
 shift-cmd-m     = 'exec-and-forget open /Applications/Spotify.app'
 ctrl-cmd-f      = 'exec-and-forget open ~'
 shift-cmd-n     = 'exec-and-forget /Applications/Ghostty.app/Contents/MacOS/ghostty -e nvim'
-# KeePassXC: focus existing window or open
 shift-cmd-k     = 'exec-and-forget osascript -e "tell application \"KeePassXC\" to activate" -e "on error" -e "do shell script \"open /Applications/KeePassXC.app\"" -e "end try"'
