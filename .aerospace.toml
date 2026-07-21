@@ -86,6 +86,6 @@ shift-cmd-enter = 'exec-and-forget open -n /Applications/Zen.app --args --blank-
 shift-cmd-b     = 'exec-and-forget open -n /Applications/Zen.app'
 shift-cmd-d     = 'exec-and-forget open -n /Applications/Vesktop.app'
 shift-cmd-m     = 'exec-and-forget open /Applications/Spotify.app'
-ctrl-cmd-f      = 'exec-and-forget open ~'
+shift-cmd-f      = 'exec-and-forget open ~'
 shift-cmd-n     = 'exec-and-forget /Applications/Ghostty.app/Contents/MacOS/ghostty -e nvim'
 shift-cmd-k     = 'exec-and-forget open /Applications/KeePassXC.app'
