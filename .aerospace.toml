@@ -1,0 +1,86 @@
+after-login-command = []
+after-startup-command = []
+start-at-login = true
+accordion-padding = 30
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+[gaps]
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.right = 10
+outer.bottom = 10
+outer.top = 10
+
+[mode.main.binding]
+# Reload
+cmd-shift-o = 'reload-config'
+
+# Focus
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+# Move/swap
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# Warp (move and split)
+ctrl-alt-h = 'join-with left'
+ctrl-alt-j = 'join-with down'
+ctrl-alt-k = 'join-with up'
+ctrl-alt-l = 'join-with right'
+
+# Layout
+alt-f = 'fullscreen'
+alt-t = 'layout floating tiling'
+alt-shift-r = 'balance-sizes'
+alt-slash = 'layout tiles horizontal vertical'
+alt-comma = 'layout accordion horizontal vertical'
+
+# Workspaces
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+alt-0 = 'workspace 10'
+alt-a = 'workspace prev'
+alt-d = 'workspace next'
+
+# Move window to workspace
+alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
+alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
+alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
+alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
+alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
+alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
+alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
+alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
+alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
+alt-shift-0 = ['move-node-to-workspace 10', 'workspace 10']
+alt-shift-a = ['move-node-to-workspace prev', 'workspace prev']
+alt-shift-d = ['move-node-to-workspace next', 'workspace next']
+
+# Move window to display
+alt-shift-s = ['move-node-to-monitor prev', 'focus-monitor prev']
+alt-shift-g = ['move-node-to-monitor next', 'focus-monitor next']
+
+# App launchers
+cmd-enter       = 'exec-and-forget open -n /Applications/Ghostty.app'
+shift-cmd-enter = 'exec-and-forget open -n /Applications/Zen.app --args --blank-window'
+shift-cmd-b     = 'exec-and-forget open -n /Applications/Zen.app'
+shift-cmd-d     = 'exec-and-forget open -n /Applications/Vesktop.app'
+shift-cmd-m     = 'exec-and-forget open /Applications/Spotify.app'
+ctrl-cmd-f      = 'exec-and-forget open ~'
+shift-cmd-n     = 'exec-and-forget /Applications/Ghostty.app/Contents/MacOS/ghostty -e nvim'
+# KeePassXC: focus existing window or open
+shift-cmd-k     = 'exec-and-forget osascript -e "tell application \"KeePassXC\" to activate" -e "on error" -e "do shell script \"open /Applications/KeePassXC.app\"" -e "end try"'
