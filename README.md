@@ -10,7 +10,6 @@ Then symlink configs:
 
 ```sh
 ln -s ~/repos/macos-dotfiles/.aerospace.toml ~/.aerospace.toml
-ln -s ~/repos/macos-dotfiles/.hammerspoon ~/.hammerspoon
 ```
 
 > Most other configs (ghostty, borders, btop, karabiner, nvim) are managed by a separate stow repo at `~/repos/macos-config`.
